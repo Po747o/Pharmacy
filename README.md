@@ -1,1 +1,1 @@
-# Pharmacy
+# Tech Pharma
