@@ -1,0 +1,43 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(200, 128, 128, 0.5);
+    padding: 10px;
+}
+
+.cabecalho {
+    padding: 30px;
+    text-align: center;
+    background-color:rgb(128, 0, 0);
+}
+
+.cabecalho h1 {
+    font-size: 50px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(128, 0, 0, 0.5);
+}
+
+.topnav a {
+    display: block;
+    color: rgb(200, 170, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+}
+
+.topnav a:hover {
+    background-color: rgb(128, 0, 0, 0.75);
+    color: rgb(200, 170, 0);
+    border-bottom: solid 1px rgb(200, 170, 0);
+    border-radius: 5px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(200, 128, 128, 0.5);
+    margin-top: 20px;
+}
