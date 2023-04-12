@@ -18,6 +18,34 @@ text-align: center;
     border: 5px solid rgba(0, 0, 0, 0.301);
 }
 
-.footer {
+.contato {
+    padding: 20px;
     text-align: justify;
+    background-color: rgba(200, 128, 128, 0.5);
+    margin-top: 20px;
 }
+
+.texto {
+    margin-right: 25px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.images img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    justify-content: space-around;
+}
+
