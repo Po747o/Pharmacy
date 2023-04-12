@@ -32,8 +32,8 @@ ul {
   body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgba(200, 128, 128, 0.5);
-    padding: 10px;
-    width: 1000px;
+    padding: 0px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -69,9 +69,25 @@ ul {
 }
 
 .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 20px;
     text-align: justify;
     background-color: rgba(128, 0, 0, 0.5);
     margin-top: 20px;
 }
+
+.imagescard {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagescard img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+
+}
+
 
