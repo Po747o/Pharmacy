@@ -10,6 +10,9 @@
  
 
 }
+.card h2{
+    height: 45px;
+}
 
 .images img {
     height: 180px;
