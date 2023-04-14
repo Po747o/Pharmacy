@@ -24,6 +24,7 @@
 
 .card h2{
     height: 35px;
+    font-size: 18px;
 }
 
 .menuvertical {
@@ -53,7 +54,4 @@
     width: 180px;
     height: 200px;
     margin: 5px 5px 5px 5px;
-}
-h2{
-    font-size: 18px;
 }
