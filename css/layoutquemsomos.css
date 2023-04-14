@@ -15,7 +15,7 @@ text-align: center;
     float: left;  
     padding: 5px;
     margin-top: 10px;
-    border: 5px solid rgba(0, 0, 0, 0.301);
+    border: 5px solid rgb(128, 0, 0);
 }
 
 
@@ -42,6 +42,11 @@ text-align: center;
     height: 25px;
     margin: 5px;
 
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
 }
 
 .footer {
