@@ -30,6 +30,19 @@
     float: left;
 }
 
+.menuvertical a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.menuvertical a:hover {
+    background-color: rgba(200, 128, 128, 0.5);
+}
+
 .container {
  display: flex;
  flex-flow: row wrap;
