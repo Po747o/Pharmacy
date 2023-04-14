@@ -13,7 +13,7 @@
 .card{
     background-color: rgba(104, 100, 100, 0.301);
     width:190px;
-    height:380px;
+    height:350px;
     float: left;  
    padding: 5px;
    margin-left: 10px;
@@ -25,7 +25,7 @@
 }
 
 .card h2{
-    height: 45px;
+    height: 35px;
 }
 
 .menuvertical {
@@ -55,5 +55,5 @@
     margin: 5px 5px 5px 5px;
 }
 h2{
-    font-size: 22px;
+    font-size: 18px;
 }
