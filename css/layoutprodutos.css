@@ -17,6 +17,7 @@
 .images img {
     height: 180px;
     width: 180px;
+    margin: 5px 5px 5px 5px;
 }
 
 .menuvertical {
@@ -31,7 +32,6 @@
 .container {
  display: flex;
  flex-flow: row wrap;
- width: 850px;
  float: inline-end;
  height: max-content;
  width: 1000px;
