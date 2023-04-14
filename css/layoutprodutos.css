@@ -63,17 +63,7 @@
     margin-right: 25px;
 }
 
-.imagescard {
-    display: flex;
-    flex-direction: row;
-}
 
-.imagescard img {
-    width: 25px;
-    height: 25px;
-    margin: 5px;
-
-}
 
 /* .footer {
     display: flex;
