@@ -45,16 +45,18 @@ ul {
 
 .cabecalho h1 {
     font-size: 50px;
+    color: white;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: rgba(128, 0, 0, 0.5);
+    border: 5px solid rgb(128, 0, 0);
+    border-radius: 0 0 5px 5px;
 }
 
 .topnav a {
     display: block;
-    color: rgb(200, 170, 0);
+    color: black;
     padding: 14px 16px;
     text-decoration: none;
     text-align: center;
@@ -62,9 +64,9 @@ ul {
 }
 
 .topnav a:hover {
-    background-color: rgb(128, 0, 0, 0.75);
-    color: rgb(200, 170, 0);
-    border-bottom: solid 1px rgb(200, 170, 0);
+    background-color: rgba(128, 0, 0, 0.5);
+    color: black;
+    border: solid 2px white;
     border-radius: 5px;
 }
 
@@ -87,7 +89,6 @@ ul {
     width: 25px;
     height: 25px;
     margin: 5px;
-
 }
 
 
