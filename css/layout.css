@@ -80,12 +80,12 @@ ul {
     margin-top: 20px;
 }
 
-.imagescard {
+.imagesft {
     display: flex;
     flex-direction: row;
 }
 
-.imagescard img {
+.imagesft img {
     width: 25px;
     height: 25px;
     margin: 5px;
