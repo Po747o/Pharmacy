@@ -1,8 +1,5 @@
 .logo {
-    display: flex;
-    justify-content: center;
-    width: 1000px;
-    height: 1000px;
+margin-left: 350px;
 }
 
 .logo img {
