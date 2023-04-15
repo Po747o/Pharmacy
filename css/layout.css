@@ -85,7 +85,8 @@ ul {
 
 .imagesft {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    align-content: center;
 }
 
 .imagesft img {
@@ -94,4 +95,6 @@ ul {
     margin: 5px;
 }
 
-
+.redes {
+    text-align: center;
+}
