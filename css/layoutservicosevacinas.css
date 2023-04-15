@@ -23,8 +23,7 @@
    text-align: center;
 }
 
-.desconto{
-    
+.desconto{ 
     float: right;
     padding-top: 10px;
     background-color: rgb(185, 34, 34);
@@ -79,4 +78,8 @@ v1{
 v2{
     color: rgb(255, 58, 58);
     font-weight: 600;
+}
+
+.texto {
+    margin-right: 25px;
 }
