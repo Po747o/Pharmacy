@@ -37,8 +37,6 @@ ul {
     margin: 0 auto;
 }
 
-
-
 .cabecalho {
     padding: 30px;
     text-align: center;
@@ -117,6 +115,10 @@ ul {
 .redes {
     text-align: center;
 }
+.endereco {
+    text-align: center;
+}
+
 
 .texto {
     margin-top: 25px;
