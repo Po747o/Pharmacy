@@ -16,8 +16,8 @@
     
     float: right;
     padding-top: 10px;
-    background-color: rgb(185, 34, 34);
-    text-decoration: white;
+    background-color: rgb(128, 0, 0);
+    color: white;
     height: 30px;
     width: 40px;
     text-align: center;
@@ -40,7 +40,7 @@
 
 .menuvertical {
     width: 180px;
-    height: 150px;
+    height: 180px;
     margin-top: 30px;
     margin-right: 10px;
     margin-left: 10px;
@@ -87,7 +87,7 @@ v1{
 }
 
 v2{
-    color: rgb(255, 58, 58);
+    color: rgb(128, 0, 0);
     font-weight: 600;
 }
 

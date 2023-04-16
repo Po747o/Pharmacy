@@ -27,8 +27,8 @@
     
     float: right;
     padding-top: 10px;
-    background-color: rgb(185, 34, 34);
-    text-decoration: white;
+    background-color: rgb(128, 0, 0);
+    color: white;
     height: 30px;
     width: 40px;
     text-align: center;
@@ -39,7 +39,8 @@
 }
 .menuvertical {
     background-color: #eee;
-    max-height: max-content;
+    width: 180px;
+    height: 127px;
     margin-top: 30px;
     margin-right: 10px;
     margin-left: 10px;
@@ -52,7 +53,6 @@
     display: block;
     padding: 12px;
     text-decoration: none;
-    border-radius: 0 5px 5px 0;
 }
 
 .menuvertical a:hover {
@@ -84,7 +84,7 @@ v1{
 }
 
 v2{
-    color: rgb(255, 58, 58);
+    color: rgb(128, 0, 0);
     font-weight: 600;
 }
 

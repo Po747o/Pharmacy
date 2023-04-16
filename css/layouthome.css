@@ -1,8 +1,12 @@
-.logo {
-margin-left: 350px;
+body{
+    text-align: center;
 }
 
 .logo img {
     width: 500px;
     height: 500px;
+}
+
+.slogan {
+    margin-bottom: 100px;
 }
