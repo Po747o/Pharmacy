@@ -63,12 +63,14 @@ body {
 }
 
 .footer {
-    margin-top: 40px;
     padding: 20px;
     display: flex;
     flex-direction: row wrap;
     justify-content: center;
     background-color: rgba(128, 0, 0, 0.5);
+    
+
+
  
 }
 
@@ -80,6 +82,7 @@ body {
     flex-flow: row;
     column-gap: 30px;
 
+ 
 }
 
 .colunaEsquerda {

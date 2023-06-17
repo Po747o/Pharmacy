@@ -1,6 +1,3 @@
-body{
-    text-align: center;
-}
 
 .logo img {
     width: 500px;
@@ -9,4 +6,38 @@ body{
 
 .slogan {
     margin-bottom: 100px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 1000px;
+    row-gap: 10px;
+    column-gap: 10px;
+   }
+
+.menuvertical {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float:inline-end;
+}
+
+
+
+.menuvertical a {
+    border: 5px solid rgb(128, 0, 0);
+    background-color: #e9d8d8;
+    border-radius: 5px;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    padding: 12px;
+    text-decoration: none;
+    /* border-radius: 0 5px 5px 0; */
 }

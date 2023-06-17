@@ -63,10 +63,5 @@ text-align: center;
     height: 200px;
 }
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    margin-top: 0px;
-    justify-content: space-around;
-}
+
 

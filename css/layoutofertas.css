@@ -70,24 +70,21 @@
  
 }
 
-
-.contato {
-    padding: 20px;
-    text-align: justify;
-    background-color: rgba(200, 128, 128, 0.5);
+.btnVermelho{
     margin-top: 20px;
-   
+    background-color:rgb(128, 0, 0);
+    color: aliceblue;
+    float: right;
+    
 }
 
-v1{
-    text-decoration: line-through;
+.btnVermelho:hover{
+    background-color:rgb(158, 9, 9);
+    color: aliceblue;
+    
+    
 }
 
-v2{
-    color: rgb(128, 0, 0);
-    font-weight: 600;
-}
-
-.texto {
-    margin-right: 25px;
+.labeltxt{
+    margin-top: 20px;
 }
