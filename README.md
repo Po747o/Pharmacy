@@ -27,3 +27,18 @@ Formulários:
 - Cadastrar Funcionário (Thayna)
 
 - Cadastrar Produto (Thayna)
+
+Vinicius de Nano Holanda:
+produtos
+serviços e vacinas
+ofertas
+cadastrar cliente
+cadastrar serviços e vacinas
+
+Thayna Albuquerque Silva:
+home
+quem somos
+atendimento
+layout
+cadastrar funcionário
+cadastrar produto
