@@ -8,13 +8,13 @@ body {
 .main {
     width: 1000px;
     margin: 0 auto;
-    height: 100vh;
+   
 }
 
 main {
     width: 1000px;
     margin: 0 auto;
-    height: 100vh;
+    
 }
 
 .cabecalho {
@@ -83,6 +83,8 @@ main {
 }
 
 .footer {
+    margin-top: 30px;
+    float: inline-end;
     padding: 20px;
     display: flex;
     flex-direction: row wrap;
