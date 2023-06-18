@@ -9,7 +9,7 @@ main h1{
 main .container {
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 main .card{
