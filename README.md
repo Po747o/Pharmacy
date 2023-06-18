@@ -17,3 +17,13 @@ Páginas:
 - Ofertas
 
 - Atendimento
+
+Formulários:
+
+- Cadastrar Cliente (Vinicius)
+
+- Cadastrar Serviços e Vacinas (Vinicius)
+
+- Cadastrar Funcionário (Thayna)
+
+- Cadastrar Produto (Thayna)
