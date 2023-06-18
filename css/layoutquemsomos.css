@@ -2,13 +2,13 @@
 text-align: center;
 }
 
-.container {
+main .container {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
 }
 
-.card{
+main .card{
     width:200px;
     height:380px;
     float: left;  
@@ -17,36 +17,16 @@ text-align: center;
     border: 5px solid rgb(128, 0, 0);
     border-radius: 5px 5px 5px 5px;
     background-color: rgba(200, 128, 128, 0.5);
-    
 }
 
-.desconto{
-    
-    float: right;
-    padding-top: 10px;
-    background-color: rgb(185, 34, 34);
-    text-decoration: white;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    border-radius: 60%;
-    position: relative;
-    z-index: 10;
-    margin-top: -180px !important;
-}
-
-.contato {
+.descricao {
     padding: 20px 25px 20px 25px;
     text-align: justify;
     background-color: rgba(200, 128, 128, 0.5);
     margin-top: 20px;
 }
 
-.texto {
-    margin-right: 25px;
-}
-
-.images {
+/*.images {
     display: flex;
     flex-direction: row;
 }
@@ -55,13 +35,9 @@ text-align: center;
     width: 25px;
     height: 25px;
     margin: 5px;
-
-}
+}*/
 
 .card img {
     width: 200px;
     height: 200px;
 }
-
-
-

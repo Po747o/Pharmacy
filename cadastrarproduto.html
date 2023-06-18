@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="\bootstrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css">
-    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="shortcut icon" href="imagens/logotechpharma.png" type="image/x-icon">
     <title>TechPharma - Cadastrar Produto</title>
 </head>
@@ -14,7 +14,7 @@
 <body>
 
     <header class="cabecalho">
-        <div class="home">
+        <div class="titulo">
             <h1>CADASTRAR PRODUTO</h1>
         </div>
 
@@ -30,19 +30,19 @@
         </div>
       </nav>
 
-    <main class="container mt-3">
+    <main class="container mt-3 main">
 
         <form action="">
             <div class="row g-3">
                 <div class="col">
-                    <label for="nome" class="form-label">NOME</label>
+                    <label for="nome" class="form-label labeltxt">NOME</label>
                     <input type="text" class="form-control" placeholder="" aria-label="nome" name="nome" id="nome"
                         minlength="10" maxlength="300" required pattern="[a-z A-Z]{10-300}[]">
                     <span class="mensagem-erro" data-erro></span>
                 </div>
 
                 <div class="col">
-                    <label for="tipo" class="form-label">TIPO</label>
+                    <label for="tipo" class="form-label labeltxt">TIPO</label>
                     <input type="text" class="form-control" aria-label="tipo" name="tipo" id="tipo"
                         minlength="5" maxlength="300" required>
                     <span class="mensagem-erro" data-erro></span>
@@ -51,14 +51,14 @@
 
             <div class="row g-3">
                 <div class="col">
-                    <label for="pesovolume" class="form-label">PESO/VOLUME</label>
+                    <label for="pesovolume" class="form-label labeltxt">PESO/VOLUME</label>
                     <input type="text" class="form-control" aria-label="pesovolume" name="pesovolume"
                         id="pesovolume" minlength="3" maxlength="100" required>
                     <span class="mensagem-erro" data-erro></span>
                 </div>
 
                 <div class="col">
-                    <label for="codigo" class="form-label">CÓDIGO DE BARRAS</label>
+                    <label for="codigo" class="form-label labeltxt">CÓDIGO DE BARRAS</label>
                     <input type="text" class="form-control" placeholder="" aria-label="codigo" name="codigo"
                         id="codigo" minlength="14" maxlength="14" required pattern="[0-9]{3}-[0-9]{6}-[0-9]{3}">
                     <span class="mensagem-erro" data-erro></span>
@@ -67,14 +67,14 @@
 
             <div class="row g-3">
                 <div class="col">
-                    <label for="funcao" class="form-label">FORNECEDOR</label>
+                    <label for="funcao" class="form-label labeltxt">FORNECEDOR</label>
                     <input type="text" class="form-control" aria-label="fornecedor" name="fornecedor" id="fornecedor"
                         minlength="5" maxlength="300" required>
                     <span class="mensagem-erro" data-erro></span>
                 </div>
 
                 <div class="col">
-                    <label for="estoque" class="form-label">ESTOQUE</label>
+                    <label for="estoque" class="form-label labeltxt">ESTOQUE</label>
                     <input type="number" class="form-control" aria-label="estoque" name="estoque"
                         id="estoque" min="1" required>
                     <span class="mensagem-erro" data-erro></span>
@@ -83,14 +83,14 @@
 
             <div class="row g-3">
                 <div class="col">
-                    <label for="valorcompra" class="form-label">VALOR DE COMPRA</label>
+                    <label for="valorcompra" class="form-label labeltxt">VALOR DE COMPRA</label>
                     <input type="text" class="form-control" aria-label="valorcompra" name="valorcompra" id="valorcompra"
                         minlength="6" maxlength="100" required pattern="R$ [0-9]{0-300},[0-9]{1-2}">
                     <span class="mensagem-erro" data-erro></span>
                 </div>
 
                 <div class="col">
-                    <label for="valorvenda" class="form-label">VALOR DE VENDA</label>
+                    <label for="valorvenda" class="form-label labeltxt">VALOR DE VENDA</label>
                     <input type="text" class="form-control" aria-label="valorvenda" name="valorvenda" id="valorvenda"
                         minlength="6" maxlength="100" required pattern="R$ [0-9]{0-300},[0-9]{1-2}">
                     <span class="mensagem-erro" data-erro></span>
