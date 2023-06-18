@@ -3,7 +3,6 @@ body {
     padding: 0px;
     margin: 0 auto;
     background-color: #eeeeee;
-    
 }
 
 .main {
@@ -30,7 +29,6 @@ body {
 }
 
 .topnav {
-    
     overflow: hidden;
     border-bottom: 5px solid rgb(128, 0, 0);
     border-radius: 0 0 5px 5px;

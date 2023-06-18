@@ -6,16 +6,18 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     height: max-content;
+    padding: 10px;
     width: 1000px;
     row-gap: 10px;
     column-gap: 10px;
-   }
+}
 
 .sac {
     display: block;
-    height: max-content;
+    padding: 10px;
+    width: 1000px;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 5px solid rgb(128, 0, 0);
@@ -23,8 +25,7 @@ body {
     background-color: rgba(200, 128, 128, 0.5);
 }
 
-.linkedin img{
+.linkedin img {
     width: 100px;
-    height: 100px;  
+    height: 100px;
 }
-

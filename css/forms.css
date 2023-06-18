@@ -1,9 +1,7 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0px;
     margin: 0 auto;
     background-color: #eeeeee;
-    
 }
 
 .main {
@@ -30,7 +28,6 @@ body {
 }
 
 .topnav {
-    
     overflow: hidden;
     border-bottom: 5px solid rgb(128, 0, 0);
     border-radius: 0 0 5px 5px;
@@ -62,16 +59,28 @@ body {
     border-radius: 5px;
 }
 
+.btnVermelho{
+    margin-top: 20px;
+    background-color:rgb(128, 0, 0);
+    color: aliceblue;
+    float: right;  
+}
+
+.btnVermelho:hover{
+    background-color:rgb(158, 9, 9);
+    color: aliceblue; 
+}
+
+.labeltxt{
+    margin-top: 20px;
+}
+
 .footer {
     padding: 20px;
     display: flex;
     flex-direction: row wrap;
     justify-content: center;
     background-color: rgba(128, 0, 0, 0.5);
-    
-
-
- 
 }
 
 .corpoFooter {
@@ -81,19 +90,15 @@ body {
     display: flex;
     flex-flow: row;
     column-gap: 30px;
-
- 
 }
 
 .colunaEsquerda {
-  
     width: 485px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     text-align: center;
     align-items: center;
-    
 }
 
 .colunaDireita{
@@ -102,16 +107,14 @@ body {
     display: flex;
     flex-flow: row wrap ;
     text-align: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .iconphone{ 
     margin-right: 5px;
     align-self: first baseline;
-
-    
 }
+
 .iconphone img{
     width: 20px;
     height: 20px;
@@ -135,27 +138,7 @@ body {
     column-gap: 30px;
 }
 
-
 .iconredes img{
     width: 50px;
     height: 50px;  
-}
-
-.btnVermelho{
-    margin-top: 20px;
-    background-color:rgb(128, 0, 0);
-    color: aliceblue;
-    float: right;
-    
-}
-
-.btnVermelho:hover{
-    background-color:rgb(158, 9, 9);
-    color: aliceblue;
-    
-    
-}
-
-.labeltxt{
-    margin-top: 20px;
 }
