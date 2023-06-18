@@ -3,7 +3,6 @@ const botao = document.querySelector("#btnSalvar");
 
 inputs.forEach((elemento) => { 
     elemento.addEventListener("blur", (evento) => {
-        console.log(evento);
         validaCampo(evento.target);
     })
 });
@@ -50,8 +49,6 @@ function validaCampo(campo) {
         var codigo = campo.value;
 
         var mask = codigo.split('');
-
-        console.log(mask[0]);
 
             if (!(mask[3] === '-' && mask[10] === '-')) {
                 msnErro.textContent = "Digite o código no seguinte formato: 000-000000-000.";

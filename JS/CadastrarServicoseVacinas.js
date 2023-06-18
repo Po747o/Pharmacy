@@ -6,17 +6,12 @@ const botao = document.querySelector("#btnSalvar");
 
 
 inputs.forEach((elemento) =>{
-    console.log(elemento);
     elemento.addEventListener("blur",(evento)=>{
-        console.log(evento);
-        
         validaCampo(evento.target);    
         validaCPF(evento.target);  
     })
     
 });
-
-
 
 botao.addEventListener("click",(evento)=>{
       
@@ -25,7 +20,6 @@ botao.addEventListener("click",(evento)=>{
         alert("Insira um CPF válido antes de enviar!");
        }
 
-    console.log(valida2);
        if(valida2 === 1){
         evento.preventDefault();
         alert("Selecione um sexo válido antes de enviar!");
@@ -34,7 +28,7 @@ botao.addEventListener("click",(evento)=>{
 
 
 function validaCampo(campo) {
-    const msnErro = campo.parentNode.querySelector("[data-erro]");
+const msnErro = campo.parentNode.querySelector("[data-erro]");
        
     
     switch (campo.name)
@@ -65,8 +59,6 @@ function validaCampo(campo) {
 
         case 'duracao' :
 
-            
-            
     
             if(campo.value.length < 8 ) {
                 msnErro.textContent = "Digite a duracao do serviço(00:00:00)!";
@@ -80,7 +72,6 @@ function validaCampo(campo) {
 
             case 'valor':
                 var valor = campo.value;
-            
             
     
                 if(!((valor.includes("R$") && valor.includes(",")) )) {
@@ -131,5 +122,4 @@ function validaCampo(campo) {
              case 'quant':
     
         }
- 
 }

@@ -7,7 +7,6 @@ var valida2 = 1;
 
 inputs.forEach((elemento) => { 
     elemento.addEventListener("blur", (evento) => {
-        console.log(evento);
         validaCampo(evento.target);
         validaCPF(evento.target);
     })
@@ -16,7 +15,6 @@ inputs.forEach((elemento) => {
 cpf.addEventListener("keypress",(evento) =>{
 
     var  St = evento.which;
-    console.log(St);
 
       if(!((St >= 48 && St <= 57) || St === 46 || St === 45)){
         evento.preventDefault()
