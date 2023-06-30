@@ -18,12 +18,17 @@ Páginas:
 
 - Atendimento
 
-Formulários:
+Vinicius de Nano Holanda:
+- produtos
+- serviços e vacinas
+- ofertas
+- cadastrar cliente
+- cadastrar serviços e vacinas
 
-- Cadastrar Cliente (Vinicius)
-
-- Cadastrar Serviços e Vacinas (Vinicius)
-
-- Cadastrar Funcionário (Thayna)
-
-- Cadastrar Produto (Thayna)
+Thayna Albuquerque Silva:
+- home
+- quem somos
+- atendimento
+- layout
+- cadastrar funcionário
+- cadastrar produto
