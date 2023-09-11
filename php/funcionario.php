@@ -4,7 +4,7 @@ $dataNasc = $_POST['dataNasc'];
 $cpf = $_POST['cpf'];
 $celular = $_POST['celular'];
 $salario = $_POST['salario'];
-$funcao = $_POST['email'];
+$funcao = $_POST['funcao'];
 $sexo = $_POST['sexo'];
 $rg = $_POST['rg'];
 
