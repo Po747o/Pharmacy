@@ -59,8 +59,7 @@
 
 .container {
     display: flex;
-    flex-flow: row wrap;
-    float: inline-end;
+    flex-flow: row wrap;    
     height: max-content;
     width: 1000px;
     row-gap: 10px;
