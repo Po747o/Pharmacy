@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="css/layoutprodutos.css">
     <link rel="shortcut icon" href="imagens/logotechpharma.png" type="image/x-icon">
     <title>TechPharma - Produtos</title>
-</head>   
+    <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+</head>
 
 <body>
+    <main>
     <header class="cabecalho">
         <div class="titulo">
             <h1>PRODUTOS</h1>
@@ -29,143 +32,105 @@
             <a href="quemsomos.html">QUEM SOMOS</a>
         </div>
     </nav>
-    <main>
-        <div class="menuvertical">
-            <a href="#">HIGIENE E CUIDADOS PESSOAIS</a>
-            <a href="#">VITAMINAS</a>
-            <a href="#">MEDICAMENTOS</a>
-            <a href="#">CUIDADOS INFANTIS</a>
-        </div>
-        <div class="container">
-            <div class="card">
 
-                <div class="images">
-                    <img src="imagens/card-dipirona.png" alt="#">
-                    <div class="desconto">-40%</div>
-                </div>
-
+    <div class="wrapper">
+        <i id="left" buttom="btn" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+            <li class="card">
+                <div class="img"><img src="imagens/card-dipirona.png" alt="img" draggable="false"></div>
+                <div class="desconto">-40%</div>
                 <h2>DIPIRONA</h2>
                 <h5>MEDICAMENTOS </h5>
                 <v1>R$16,50</v1>
                 <v2>R$9,90</v2>
+            </li>
 
-            </div>
-
-            <div class="card">
-                
-                <div class="images">
-                    <img src="imagens/card-xarope.png" alt="#">
-                </div>
+            <li class="card">
+                <div class="img"><img src="imagens/card-xarope.png" alt="img" draggable="false"></div>
                 <h2>XAROPE</h2>
                 <h5>MEDICAMENTOS</h5>
-                R$ 7,99
-            </div>
-            <div class="card">
-                
-                <div class="images">
-                    <img src="imagens/card-b12.png" alt="#">
-                </div>
+                <v2>R$ 7,99</v2>
+            </li>
+
+
+            <li class="card">
+                <div class="img"><img src="imagens/card-b12.png" alt="img" draggable="false"></div>
                 <h2>VITAMINA B-12</h2>
                 <h5>VITAMINAS</h5>
-                R$ 5,99
-            </div>
+                <v2>R$ 5,99</v2>
+            </li>
 
-            <div class="card">
-
-                <div class="images">
-                    <img src="imagens/card-fralda.png" alt="#">
-                    <div class="desconto">-30%</div>
-                </div>
+            <li class="card">
+                <div class="img"><img src="imagens/card-fralda.png" alt="img" draggable="false"></div>
                 <h2>FRALDA INFANTIL</h2>
-                <h5>CUIDADOS INFANTIS</h5>               
+                <h5>CUIDADOS INFANTIS</h5>
                 <v1>R$54,99</v1>
                 <v2>R$38,49</v2>
+            </li>
 
-            </div>
 
-            <div class="card">
-               
-                <div class="images">
-                    <img src="imagens/card-rexona.png" alt="#">
-                </div>
+            <li class="card">
+                <div class="img"><img src="imagens/card-rexona.png" alt="img" draggable="false"></div>
                 <h2>DESODORANTE AEROSOL</h2>
                 <h5>HIGIENE E CUIDADOS PESSOAIS</h5>
-                R$ 5,99
-            </div>
-            <div class="card">
-             
-                <div class="images">
-                    <img src="imagens/card-vitamina_c.png" alt="#">
-                </div>
-                <h2>VITAMINA C</h2>
-                <h5>VITAMINAS</h5>
-                R$ 5,99
-            </div>
+                <v2>R$ 5,99</v2>
+            </li>
 
-            <div class="card">
-               
-                <div class="images">
-                    <img src="imagens/card-talco_infantil.png" alt="#">
-                </div>
+            <li class="card">
+                <div class="img"><img src="imagens/card-talco_infantil.png" alt="img" draggable="false"></div>
                 <h2>TALCO INFANTIL</h2>
                 <h5>CUIDADOS INFANTIS</h5>
-                R$ 5,99
-            </div>
-
-            <div class="card">
-           
-                <div class="images">
-                    <img src="imagens/card-repelente.png" alt="#">
-                </div>
+                <v2>R$ 5,99</v2>
+            </li>
+            <li class="card">
+                <div class="img"><img src="imagens/card-repelente.png" alt="img" draggable="false"></div>
                 <h2>REPELENTE</h2>
                 <h5>HIGIENE E CUIDADOS PESSOAIS</h5>
-                R$ 5,99
-            </div>
+                <v2>R$ 5,99</v2>
+            </li>
 
-            <div class="card">
-            
-                <div class="images">
-                    <img src="imagens/card-ibuprofeno.png" alt="#">
-                </div>
+            <li class="card">
+                <div class="img"><img src="imagens/card-ibuprofeno.png" alt="img" draggable="false"></div>
                 <h2>IBUPROFENO</h2>
                 <h5>MEDICAMENTOS</h5>
-                R$ 10,99
-            </div>
-
-        </div>
-    </main>
-
+                <v2>R$ 10,99</v2>
+            </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+    
     <footer class="footer">
         <div class="corpoFooter">
-          <div class="colunaEsquerda">
-    
-            <div class="iconphone">
-              <img src="imagens/iconetelefone.png" alt="#">
-            </div>
-    
-            <div class="contato">
-              <h4>Entre em contato conosco! (69) 3456-7890</h4>
-              <h5>Atendimento das 08h00 às 22h00,<br> todos os dias da semana </h5>
-            </div>
-    
-          </div>
-    
-          <div class="colunaDireita">
-    
-            <div class="redes">
-              <h4>Nos encontre em nossas redes sociais!</h4>
-            </div>
-    
-            <div class="iconredes">
-              <img src="imagens/iconefacebook.png" alt="#">
-              <img src="imagens/iconeinstagram.png" alt="#">
-              <img src="imagens/iconetwitter.png" alt="#">
-              <img src="imagens/iconeyoutube.png" alt="#">
-            </div>
-    
-          </div>
-    
-      </footer>
-</body>
+            <div class="colunaEsquerda">
 
+                <div class="iconphone">
+                    <img src="imagens/iconetelefone.png" alt="#">
+                </div>
+
+                <div class="contato">
+                    <h4>Entre em contato conosco! (69) 3456-7890</h4>
+                    <h5>Atendimento das 08h00 às 22h00,<br> todos os dias da semana </h5>
+                </div>
+
+            </div>
+
+            <div class="colunaDireita">
+
+                <div class="redes">
+                    <h4>Nos encontre em nossas redes sociais!</h4>
+                </div>
+
+                <div class="iconredes">
+                    <img src="imagens/iconefacebook.png" alt="#">
+                    <img src="imagens/iconeinstagram.png" alt="#">
+                    <img src="imagens/iconetwitter.png" alt="#">
+                    <img src="imagens/iconeyoutube.png" alt="#">
+                </div>
+
+            </div>
+        </main>
+    </footer>
+ 
+</body>
+   <script src="JS/ProdutosDes.js" defer></script>
 </html>

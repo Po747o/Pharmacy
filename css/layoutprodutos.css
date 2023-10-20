@@ -1,3 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100v;
+}
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background:#fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.wrapper i:first-child{
+    left:-22px;
+}
+
+.wrapper i:last-child{
+    right:-22px;
+}
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap:16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel :where(.card, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card{
+    list-style:none;
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .card {
     width: 190px;
     height: 380px;
@@ -10,6 +76,17 @@
     text-align: center;
 }
 
+@media screen and (max-width:900px){
+    .wrapper .carousel{
+        grid-auto-columns:calc((100%/2) -9px)
+    }
+}
+
+@media screen and (max-width:600px){
+    .wrapper .carousel{
+        grid-auto-columns:100%;
+    }
+}
 .desconto {
     float: right;
     background-color: rgb(128, 0, 0);
@@ -65,7 +142,10 @@
     row-gap: 10px;
     flex: 1 0 0;
     column-gap: 10px;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;
+    max-width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;   
 }
 
 .texto {
@@ -87,3 +167,4 @@ v2 {
     margin-top: 0px;
     justify-content: space-around;
 } */
+
