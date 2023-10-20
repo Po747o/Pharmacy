@@ -5,7 +5,7 @@ const firstCarWhidth = carousel.querySelector(".card").offsetwidth;
 let isDragging = false, startX, startScrollLeft;
 
 arrowBtns.forEach(btn=>{
-    btn.addEventListener("click", ()=> {
+    btn.addEventListener("click", ()=>{
         carousel.scrollLeft += btn.id === "left" ? -firstCarWhidth : firstCarWhidth;
     })
 })
