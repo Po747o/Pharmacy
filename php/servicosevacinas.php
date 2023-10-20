@@ -15,7 +15,7 @@ if($_con===FALSE) {
     echo "Foi possível conectar ao Servidor de banco de dados ";
     // Exemplo: SQL query
     // $result = mysqli_query($_con, "use bd_escola;");
-    $sql = "INSERT into servico values(null,'$nome','$fabricante','$duracao','$valor','$tipo','$local','$profissional','$quant','$quant')";
+    $sql = "INSERT into servico values(null,'$nome','$fabricante','$duracao','$valor','$tipo','$local','$profissional','$quant')";
 if (mysqli_query($_con, $sql)) {
       echo "Novo registro inserido com sucesso!";
 } else {

@@ -2,7 +2,7 @@
 
 Tema: website de uma drogaria
 
-Dupla: Thayna Albuquerque Silva e Vinicius de Nano Holanda
+Grupo: Samara Hespanhol Fraga, Thayna Albuquerque Silva e Vinicius de Nano Holanda
 
 Páginas:
 
@@ -32,3 +32,9 @@ Thayna Albuquerque Silva:
 - layout
 - cadastrar funcionário
 - cadastrar produto
+
+
+Samara Hespanhol Fraga:
+- conexão com banco de dados 
+- contribuição na elaboração do diagrama ER
+- ajuda nos códigos SQL
