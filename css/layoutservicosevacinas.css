@@ -154,13 +154,13 @@
 }
 
 .container {
+    row-gap: -20px;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     height: max-content;
     width: 1000px;
-    row-gap: 10px;
     column-gap: 10px;
     justify-content: space-evenly;
 }
