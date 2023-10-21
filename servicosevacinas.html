@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <header class="cabecalho">
         <div class="titulo">
             <h1>SERVIÇOS E VACINAS</h1>
@@ -31,76 +30,79 @@
         </div>
     </nav>
 
-
-
-    <main class="container">
-
+    <topnav class="container">
         <div class="menuvertical">
             <a href="#">EXAMES LABORATORIAIS</a>
             <a href="#">TESTES RÁPIDOS</a>
             <a href="#">VACINAS</a>
             <a href="#">SERVIÇOS A DOMICÍLIO</a>
         </div>
+    </topnav>
+   
+    <main> 
+        <div class="wrapper">
+        <!--1-->
 
-        <div class="card">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+            <li class="card">
+                <div>
+                    <div class="images"><img src="imagens/card-vacina_triplice_bacteriana.png" alt="img" draggable="false">
+                    </div>
+                    <div class="desconto">-50%</div>
+                </div>
+                <h2>VACINA TRÍPLICE BACTERIANA</h2>
+                <h5>VACINAS</h5>
+                <v1>R$50,00</v1>
+                <v2>R$25,00</v2>
+            </li>
 
-            <div class="images">
-                <img src="imagens/card-vacina_triplice_bacteriana.png" alt="#">
-                <div class="desconto">-50%</div>
-            </div>
-            <h2>VACINA TRÍPLICE BACTERIANA</h2>
-            <h5>VACINAS</h5>
-            <v1>R$50,00</v1>
-            <v2>R$25,00</v2>
-        </div>
+            <!--2-->
+            <li class="card">
 
-        <div class="card">
+                <div class="images"><img src="imagens/card-covid_antigeno.jpeg" alt="img" draggable="false"></div>
+                <h2>TESTE COVID-19 ANTÍGENO</h2>
+                <h5>TESTE RÁPIDO</h5>
+                <v2>R$ 7,99</v2>
+            </li>
 
-            <div class="images">
-                <img src="imagens/card-covid_antigeno.jpeg" alt="#">
-            </div>
-            <h2>TESTE COVID-19 ANTÍGENO</h2>
-            <h5>TESTE RÁPIDO</h5>
-            R$ 7,99
-        </div>
+            <!--3-->
+            <li class="card">
+                <div class="images"><img src="imagens/card-vacina_tríplice_viral.png" alt="img" draggable="false">
+                </div>
+                <h2>VACINA TRÍPLICE VIRAL</h2>
+                <h5>VACINAS</h5>
+                <v2>R$ 7,99</v2>
+            </li>
 
-        <div class="card">
-            <div class="images">
-                <img src="imagens/card-vacina_tríplice_viral.png" alt="#">
-            </div>
-            <h2>VACINA TRÍPLICE VIRAL</h2>
-            <h5>VACINAS</h5>
-            R$ 7,99
-        </div>
+            <!--4-->
+            <li class="card">
+                <div class="images"><img src="imagens/card-pressão sanguínea.jpeg" alt="img" draggable="false"></div>
+                <h2>MEDIÇÃO DA PRESSÃO SANGUÍNEA</h2>
+                <br>
+                <h5>SERVIÇOS A DOMICÍLIO</h5>
+                <v2>R$ 179,99</v2>
+            </li>
 
-        <div class="card">
-            <div class="images">
-                <img src="imagens/card-pressão sanguínea.jpeg" alt="#">
-            </div>
-            <h2>MEDIÇÃO DA PRESSÃO SANGUÍNEA</h2>
-            <br>
-            <h5>SERVIÇOS A DOMICÍLIO</h5>
-            R$ 179,99
-        </div>
+            <!--5-->
+            <li class="card">
+                <div class="images"><img src="imagens/card-hemograma.jpeg" alt="img" draggable="false"></div>
+                <h2>HEMOGRAMA</h2>
+                <h5>EXAMES LABORATORIALS</h5>
+                <v2>R$ 1,99</v2>
+            </li>
 
-        <div class="card">
-
-            <div class="images">
-                <img src="imagens/card-hemograma.jpeg" alt="#">
-            </div>
-            <h2>HEMOGRAMA</h2>
-            <h5>EXAMES LABORATORIALS</h5>
-            R$ 1,99
-        </div>
-
-        <div class="card">
-            <div class="images">
-                <img src="imagens/card-teste_rápido_dengue_duo_ecodiagnóstica.png" alt="#">
-            </div>
-            <h2>TESTE RÁPIDO DENGUE DUO ECODIAGNÓSTICA</h2>
-            <br>
-            <h5>TESTES RÁPIDOS</h5>
-            R$ 7,99
+            <!--6-->
+            <li class="card">
+                <div class="images"><img src="imagens/card-teste_rápido_dengue_duo_ecodiagnóstica.png" alt="img"
+                        draggable="false"></div>
+                <h2>TESTE RÁPIDO DENGUE DUO ECODIAGNÓSTICA</h2>
+                <br>
+                <h5>TESTES RÁPIDOS</h5>
+                <v2>R$ 7,99</v2>
+            </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
     </main>
 
@@ -133,8 +135,8 @@
                 </div>
 
             </div>
-
     </footer>
+    <script src="JS/ServEvacinas.js" defer></script>
 
     <body>
 
