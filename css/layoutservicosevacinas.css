@@ -81,9 +81,8 @@ v2 {
     font-weight: 600;
 }
 
-/* .footer {
+.footer {
     display: flex;
-    flex-direction: row;
-    margin-top: 0px;
-    justify-content: space-around;
-} */
+    width: 100%;
+    text-align: center;
+} 

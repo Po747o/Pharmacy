@@ -82,3 +82,9 @@
     background-color: rgb(158, 9, 9);
     color: aliceblue;
 }
+
+.footer {
+    display: flex;
+    width: 100%;
+    text-align: center;
+} 

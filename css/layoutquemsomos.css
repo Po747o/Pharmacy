@@ -50,3 +50,9 @@ main iframe {
     width: 180px;
     height: 130px;
 }
+
+.footer {
+    display: flex;
+    width: 100%;
+    text-align: center;
+} 
