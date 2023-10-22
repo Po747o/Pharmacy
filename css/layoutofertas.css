@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     height: max-content;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgba(200, 128, 128, 0.5);
 }
@@ -66,7 +66,7 @@
     float: inline-end;
     height: max-content;
     width: 1000px;
-    row-gap: 10px;
+    row-gap: -20px;
     column-gap: 10px;
     justify-content: space-evenly;
 }
