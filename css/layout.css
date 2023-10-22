@@ -80,6 +80,8 @@ main {
 
 .footer {
     margin-top: 30px;
+    width: 100%;
+    text-align: center;
     float: inline-end;
     padding: 20px;
     display: flex;
