@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(128, 0, 0);
+}
+
+a {
+color: rgb(128, 0, 0);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    margin: auto;
+}
+
+.card {
+    background-color: #e9d8d8;
+    padding: 30px;
+    border-radius: 5%;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: black;
+}
+
+col {
+    text-align: center;
+    align-items: center;
+}
+
+.btnVermelho {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: rgb(128, 0, 0);
+    color: aliceblue;
+    float: right;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+

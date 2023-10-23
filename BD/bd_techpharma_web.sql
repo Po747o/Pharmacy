@@ -68,10 +68,8 @@ CREATE TABLE `endereco` (
 --
 
 INSERT INTO `endereco` (`ende_id`, `ende_estado`, `ende_cidade`, `ende_bairro`, `ende_rua`, `ende_numero`, `ende_complemento`, `ende_cep`) VALUES
-(1, 'aff', 'sd', 'ff', 'vsv', 39, 'casa', '144-13'),
-(2, 'aff', 'sd', 'ff', 'vsv', 30, 'casaaaaa', '144-13'),
-(3, 'Rondonia', 'distrito de medici', 'primavera', 'rondon', 3423, 'casa', '234141-13'),
-(4, 'Rondonia', 'distrito de medici', 'nova brasilia', 'rondon', 3423, 'casa', '234141-13');
+(1, 'Rondonia', 'distrito de medici', 'primavera', 'rondon', 3423, 'casa', '234141-13'),
+(2, 'Rondonia', 'distrito de medici', 'nova brasilia', 'rondon', 3423, 'casa', '234141-13');
 
 -- --------------------------------------------------------
 

@@ -40,7 +40,7 @@
 
 .menuvertical {
     text-align: center;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     height: max-content;
@@ -50,13 +50,15 @@
 }
 
 
-.menuvertical a {
+.filtro-btn {
     color: black;
+    border: none;
+    background-color: rgba(200, 128, 128, 0);
     padding: 10px;
     text-decoration: none;
 }
 
-.menuvertical a:hover {
+.filtro-btn:hover {
     background-color: rgba(128, 0, 0, 0.5);
 }
 
