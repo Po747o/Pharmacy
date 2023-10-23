@@ -133,7 +133,7 @@ function validaCampo(campo) {
 
         var cpf = campo.value;
 
-        var mask = cpf.split('');//valor dentro das aspas é o que faz a separação
+        var mask = cpf.split('');
 
         if(!(mask[3] === '.' && mask[7] === '.' && mask[11] === '-' )){
             msnErro.textContent = "Digite o CPF no seguinte formato: 000.000.000-00.";
@@ -155,8 +155,14 @@ function validaCampo(campo) {
         break
 
         case 'salario':
-            if(campo.value.length<6) {
-                msnErro.textContent = "Digite o salário no seguinte formato: R$ 0,00.";
+
+            campo.value = campo.value.replace(/\D/g, ''); 
+            campo.value = "R$" + (parseInt(campo.value) / 100).toFixed(2);
+            const valor = campo.value;
+
+            if (!valor.match(/^R\$[0-9]{1,6}(,[0-9]{1,2})?$/)) {
+                msnErro.textContent = "Digite a valor do serviço(R$00,00)!";
+
             }
             else {
                 msnErro.textContent = "";
@@ -189,4 +195,29 @@ botao.addEventListener("click", (evento) =>{
         evento.preventDefault();
         alert("Selecione um sexo antes de enviar!");
     }
-})
+});
+
+document.getElementById('celular').addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, ''); 
+    if (value.length > 2) {
+        value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
+    }
+    if (value.length >10) {
+        value = `${value.substring(0, 10)}-${value.substring(10)}`;
+    }
+    e.target.value = value;
+});
+
+document.getElementById('cpf').addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, ''); 
+    if (value.length > 3) {
+        value = value.substring(0, 3) + '.' + value.substring(3);
+    }
+    if (value.length > 7) {
+        value = value.substring(0, 7) + '.' + value.substring(7);
+    }
+    if (value.length > 11) {
+        value = value.substring(0, 11) + '-' + value.substring(11, 13);
+    }
+    e.target.value = value;
+});

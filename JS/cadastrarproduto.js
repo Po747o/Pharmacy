@@ -96,21 +96,39 @@ function validaCampo(campo) {
         break
 
         case 'valorcompra':
-            if(campo.value.length<6) {
+            campo.value = campo.value.replace(/\D/g, ''); 
+            campo.value = "R$" + (parseInt(campo.value) / 100).toFixed(2);
+            const valor = campo.value;
+
+            if (!valor.match(/^R\$[0-9]{1,6}(,[0-9]{1,2})?$/)) {
                 msnErro.textContent = "Digite o valor de compra no seguinte formato: R$ 0,00.";
-            }
-            else {
-                msnErro.textContent = "";
+
             }
         break
 
         case 'valorvenda':
-            if(campo.value.length<6) {
-                msnErro.textContent = "Digite o valor de venda no seguinte formato: R$ 0,00.";
-            }
-            else {
-                msnErro.textContent = "";
+            campo.value = campo.value.replace(/\D/g, ''); 
+            campo.value = "R$" + (parseInt(campo.value) / 100).toFixed(2);
+            const valor2 = campo.value;
+
+            if (!valor2.match(/^R\$[0-9]{1,6}(,[0-9]{1,2})?$/)) {
+                msnErro.textContent = "Digite o valor da venda no seguinte formato: R$ 0,00.";
+
             }
         break
     }   
 }
+
+document.getElementById('codigo').addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, ''); 
+    if (value.length > 3) {
+        value = value.substring(0, 3) + '-' + value.substring(3);
+    }
+    if (value.length > 10) {
+        value = value.substring(0, 10) + '-' + value.substring(10);
+    }
+    if (value.length > 14) {
+        value = value.substring(0, 14) + '-' + value.substring(14);
+    }
+    e.target.value = value;
+});

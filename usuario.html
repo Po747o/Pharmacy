@@ -26,7 +26,7 @@
             <div class="col">
               <label for="usuario" class="form-label labeltxt">USUÁRIO</label> <br>
               <input type="text" class="form-control " placeholder="" aria-label="usuario" name="usuario" id="userLabel"
-                required minlength="10" maxlength="300" required pattern="[a-z A-Z] {10-300}[ ]">
+                required minlength="3" maxlength="300" required pattern="[a-z A-Z] {10-300}[ ]">
               <span class="mensagem-erro" data-erro></span>
             </div>
           </div>
@@ -35,14 +35,14 @@
             <div class="col">
               <label for="senha" class="form-label labeltxt">SENHA</label> <br>
               <input type="password" class="form-control " placeholder="" aria-label="senha" name="senha"
-                id="labelSenha" required minlength="10" maxlength="300" required>
+                id="labelSenha" required minlength="8" maxlength="300" required>
               <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
               <span class="mensagem-erro" data-erro></span>
             </div>
           </div>
 
           <div class="row g-3">
-            <button type="button" href="home.html" id="btnEntrar" class="btn btnVermelho">ENTRAR</button>
+            <button type="submit" href="home.html" id="btnEntrar" class="btn btnVermelho">ENTRAR</button>
           </div>
 
           <p>NÃO TEM UMA CONTA?

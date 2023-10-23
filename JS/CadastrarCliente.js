@@ -114,7 +114,19 @@ function validaCPF(campo) {
     }
 
 }
-
+document.getElementById('cpf').addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, ''); 
+    if (value.length > 3) {
+        value = value.substring(0, 3) + '.' + value.substring(3);
+    }
+    if (value.length > 7) {
+        value = value.substring(0, 7) + '.' + value.substring(7);
+    }
+    if (value.length > 11) {
+        value = value.substring(0, 11) + '-' + value.substring(11, 13);
+    }
+    e.target.value = value;
+});
 
 function validaCampo(campo) {
 const msnErro = campo.parentNode.querySelector("[data-erro]");
@@ -197,3 +209,23 @@ const msnErro = campo.parentNode.querySelector("[data-erro]");
             }
     }
 }
+
+document.getElementById('celular').addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, ''); 
+    if (value.length > 2) {
+        value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
+    }
+    if (value.length >10) {
+        value = `${value.substring(0, 10)}-${value.substring(10)}`;
+    }
+    e.target.value = value;
+});
+
+document.getElementById('cep').addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, ''); 
+
+    if (value.length > 5) {
+        value = value.substring(0, 5) + '-' + value.substring(5, 8);
+    }
+    e.target.value = value;
+});
