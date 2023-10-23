@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cliente` (
-  `id_cli` int auto_increment NOT NULL,
+  `id_cli` int PRIMARY KEY auto_increment  NOT NULL,
   `nome_cli` varchar(100) DEFAULT NULL,
   `data_nasc_cli` date DEFAULT NULL,
   `cpf_cli` varchar(15) DEFAULT NULL,
@@ -46,7 +46,7 @@ INSERT INTO `cliente` (`id_cli`, `nome_cli`, `data_nasc_cli`, `cpf_cli`, `celula
 
 
 CREATE TABLE `endereco` (
-  `ende_id` int auto_increment NOT NULL,
+  `ende_id` int PRIMARY KEY auto_increment NOT NULL,
   `ende_estado` varchar(200) DEFAULT NULL,
   `ende_cidade` varchar(50) DEFAULT NULL,
   `ende_bairro` varchar(50) DEFAULT NULL,
@@ -65,7 +65,7 @@ INSERT INTO `endereco` (`ende_id`, `ende_estado`, `ende_cidade`, `ende_bairro`, 
 
 
 CREATE TABLE `funcionario` (
-  `id_fun` int auto_increment NOT NULL,
+  `id_fun` int PRIMARY KEY auto_increment NOT NULL,
   `nome_fun` varchar(100) DEFAULT NULL,
   `cpf_fun` varchar(15) DEFAULT NULL,
   `rg_fun` int(11) DEFAULT NULL,
@@ -83,7 +83,7 @@ CREATE TABLE `funcionario` (
 --
 
 CREATE TABLE `login` (
-  `id_log` int auto_increment NOT NULL,
+  `id_log` int PRIMARY KEY auto_increment NOT NULL,
   `usuario_log` varchar(100) DEFAULT NULL,
   `senha_log` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -91,15 +91,15 @@ CREATE TABLE `login` (
 
 
 INSERT INTO `login` (`id_log`, `usuario_log`, `senha_log`) VALUES
-(null, 'Ethan', 'abacaxi2020');
-(null, 'Nano', 'boiolinha123');
+(null, 'Nano', 'abacaxi2020');
+
 
 -- --------------------------------------------------------
 
 --
 
 CREATE TABLE `produto` (
-  `id_pro` int auto_increment NOT NULL,
+  `id_pro` int PRIMARY KEY auto_increment NOT NULL,
   `nome_pro` varchar(100) DEFAULT NULL,
   `tipo_pro` varchar(100) DEFAULT NULL,
   `peso_volume_pro` varchar(100) DEFAULT NULL,
@@ -113,7 +113,7 @@ CREATE TABLE `produto` (
 
 
 CREATE TABLE `servico` (
-  `id_ser` int auto_increment NOT NULL,
+  `id_ser` int PRIMARY KEY  auto_increment NOT NULL,
   `nome_ser` varchar(100) DEFAULT NULL,
   `fabricante` varchar(100) DEFAULT NULL,
   `duracao_ser` time DEFAULT NULL,
