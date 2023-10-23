@@ -8,7 +8,7 @@ $funcao = $_POST['funcao'];
 $sexo = $_POST['sexo'];
 $rg = $_POST['rg'];
 
-$_con = mysqli_connect('127.0.0.1','root','','bd_techpharma_web');
+$_con = mysqli_connect('127.0.0.1','root','','techpharma');
 if($_con===FALSE) {
     echo "Não foi possível conectar ao Servidor de banco de dados ";
 } else {

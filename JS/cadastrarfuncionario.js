@@ -112,7 +112,7 @@ function validaCampo(campo) {
 
             break
 
-        case 'celular':
+        /*case 'celular':
 
         var cell = campo.value;
 
@@ -127,7 +127,7 @@ function validaCampo(campo) {
                 msnErro.textContent = "";
             }
 
-        break
+        break*/
 
         case 'cpf':
 
@@ -160,13 +160,7 @@ function validaCampo(campo) {
             campo.value = "R$" + (parseInt(campo.value) / 100).toFixed(2);
             const valor = campo.value;
 
-            if (!valor.match(/^R\$[0-9]{1,6}(,[0-9]{1,2})?$/)) {
-                msnErro.textContent = "Digite a valor do serviço(R$00,00)!";
-
-            }
-            else {
-                msnErro.textContent = "";
-            }
+            
         break
 
         case 'rg':

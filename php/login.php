@@ -13,10 +13,10 @@ if($_con===FALSE) {
 
     if (mysqli_num_rows($resultado) == 1) {
         $_SESSION['username'] = $username;
-        header('Location: home.html');
+        header('Location: ../home.html');
     } else {
         echo '<script>alert("Credenciais inválidas. Tente novamente.");</script>';
-        header('Refresh: 0; URL=login.html');
+        header('Refresh: 0; URL=../login.html');
     }
 }
 

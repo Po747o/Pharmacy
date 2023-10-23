@@ -23,11 +23,11 @@ if ($_con === FALSE) {
 
             $resultado = mysqli_query($_con, $insertsql);
 
-            header('Location: login.html');
+            header('Location: ../login.html');
         }
     } else {
         echo '<script>alert("Digite a mesma senha na confirmação!");</script>';
-        header('Refresh: 0; URL=cadastrarusuario.html');
+        header('Refresh: 0; URL=../cadastrarusuario.html');
     }
 }
 

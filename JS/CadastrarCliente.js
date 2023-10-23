@@ -143,7 +143,7 @@ const msnErro = campo.parentNode.querySelector("[data-erro]");
 
             break
 
-        case 'celular':
+        /*case 'celular':
 
             var cell = campo.value;
 
@@ -158,7 +158,7 @@ const msnErro = campo.parentNode.querySelector("[data-erro]");
                 msnErro.textContent = "";
             }
 
-            break
+            break*/
 
         case 'email':
             var strEmail = campo.value;
