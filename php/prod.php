@@ -9,6 +9,7 @@ $valorcompra = $_POST['valorcompra'];
 $valorvenda = $_POST['valorvenda'];
 
 
+
 $_con = mysqli_connect('127.0.0.1','root','','techpharma');
 if($_con===FALSE) {
     echo "Não foi possível conectar ao Servidor de banco de dados ";
@@ -29,7 +30,7 @@ if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK) {
     $stmt = $_con->prepare($sql);
     $stmt->bind_param("sb", $nome_imagem, $dados_imagem);*/
 
-    $sql = "INSERT into produto values(null,'$nome','$tipo','$pesovolume','$codigo','$fornecedor','$estoque','$valorcompra','$valorvenda',$dados_imagem)";
+    $sql = "INSERT into prod values(null,'$nome','$tipo','$pesovolume','$codigo','$fornecedor','$estoque','$valorcompra','$valorvenda',$dados_imagem')";
     if (mysqli_query($_con, $sql)) {
         echo "Novo registro inserido com sucesso!";
     } else {
