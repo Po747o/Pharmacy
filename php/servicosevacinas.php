@@ -17,7 +17,8 @@ if($_con===FALSE) {
     // $result = mysqli_query($_con, "use bd_escola;");
     $sql = "INSERT into servico values(null,'$nome','$fabricante','$duracao','$valor','$tipo','$local','$profissional','$quant')";
 if (mysqli_query($_con, $sql)) {
-      echo "Novo registro inserido com sucesso!";
+    echo '<script>alert("Novo registro inserido com sucesso!");</script>';
+    header('Refresh: 0; URL=../CadastrarServicoseVacinas.html');
 } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($_con);
 }
