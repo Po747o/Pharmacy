@@ -19,7 +19,7 @@ if($_con===FALSE) {
 if (mysqli_query($_con, $sql)) {
 
     echo '<script>alert("Novo registro inserido com sucesso!");</script>';
-    header('Refresh: 0; URL=../home.html');
+    header('Refresh: 0; URL=../CadastrarCliente.html');
 } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($_con);
 }
