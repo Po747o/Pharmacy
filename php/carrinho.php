@@ -3,9 +3,9 @@
 $carrinhoArray = array('Dipirona');
 $_con = mysqli_connect('127.0.0.1','root','','techpharma');
 if($_con===FALSE) {
-    echo "Não foi possível conectar ao Servidor de banco de dados ";
+    //echo "Não foi possível conectar ao Servidor de banco de dados ";
 } else {
-    echo "Foi possível conectar ao Servidor de banco de dados ";
+    //echo "Foi possível conectar ao Servidor de banco de dados ";
     // Exemplo: SQL query
     // $result = mysqli_query($_con, "use bd_escola;");
     $sql = "Select * From prod where (nome_pro = '$carrinhoArray[0]')";
@@ -24,10 +24,10 @@ if($_con===FALSE) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="\bootstrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\bootstrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="shortcut icon" href="imagens/logotechpharma.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="shortcut icon" href="../imagens/logotechpharma.png" type="image/x-icon">
     <script async scr="../js/carrinho.js"></script>
     <title>TechPharma - Carrinho de Compras</title>
 </head>
@@ -62,7 +62,7 @@ if($_con===FALSE) {
         <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th scope="col" style="float: center;">ITEM</th>
+               <!-- <th scope="col" style="float: center;">ITEM</th>
                 <th scope="col">NOME</th>
                 <th scope="col">PREÇO</th>
                 <th scope="col">QUANTIDADE</th>
@@ -123,7 +123,7 @@ if($_con===FALSE) {
             <div class="colunaEsquerda">
 
                 <div class="iconphone">
-                    <img src="imagens/iconetelefone.png" alt="#">
+                    <img src="../imagens/iconetelefone.png" alt="#">
                 </div>
 
                 <div class="contato">
@@ -140,10 +140,10 @@ if($_con===FALSE) {
                 </div>
 
                 <div class="iconredes">
-                    <img src="imagens/iconefacebook.png" alt="#">
-                    <img src="imagens/iconeinstagram.png" alt="#">
-                    <img src="imagens/iconetwitter.png" alt="#">
-                    <img src="imagens/iconeyoutube.png" alt="#">
+                    <img src="../imagens/iconefacebook.png" alt="#">
+                    <img src="../imagens/iconeinstagram.png" alt="#">
+                    <img src="../imagens/iconetwitter.png" alt="#">
+                    <img src="../imagens/iconeyoutube.png" alt="#">
                 </div>
 
             </div>
