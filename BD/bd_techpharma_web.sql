@@ -110,6 +110,19 @@ CREATE TABLE `produto` (
   `valor_venda_pro` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE `prod` (
+  `id_pro` int PRIMARY KEY auto_increment NOT NULL,
+  `nome_pro` varchar(100) DEFAULT NULL,
+  `tipo_pro` varchar(100) DEFAULT NULL,
+  `peso_volume_pro` varchar(100) DEFAULT NULL,
+  `codigo_barra_pro` varchar(100) DEFAULT NULL,
+  `fornecedor_pro` varchar(300) DEFAULT NULL,
+  `estoque_pro` int(11) DEFAULT NULL,
+  `valor_compra_pro` double DEFAULT NULL,
+  `valor_venda_pro` double DEFAULT NULL,
+  `imagem_pro` LONGBLOB DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 
 
 CREATE TABLE `servico` (
