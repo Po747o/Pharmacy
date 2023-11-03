@@ -19,26 +19,30 @@ if($_con===FALSE) {
     // $result = mysqli_query($_con, "use bd_escola;");
     // Processar o upload da imagem
 if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK) {
+    echo "if 1";
     $nome_imagem = $_FILES['imagem']['name'];
     $caminho_temporario = $_FILES['imagem']['tmp_name'];
+    echo $caminho_temporario;
 
     // Ler os dados binários da imagem
     $dados_imagem = file_get_contents($caminho_temporario);
 
+    //$sql = "INSERT into prod values(null,'$nome','$tipo','$pesovolume','$codigo','$fornecedor','$estoque','$valorcompra','$valorvenda','$dados_imagem')";
     // Inserir a imagem na tabela
-   /* $sql = "INSERT INTO imagens (nome, imagem) VALUES (?, ?)";
+    $sql = "INSERT INTO prod (nome_pro, tipo_pro, peso_volume_pro, codigo_barra_pro, fornecedor_pro, estoque_pro, valor_compra_pro, valor_venda_pro, imagem_pro) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
     $stmt = $_con->prepare($sql);
-    $stmt->bind_param("sb", $nome_imagem, $dados_imagem);*/
+    $stmt->bind_param("ssssssdds", $nome, $tipo, $pesovolume, $codigo, $fornecedor, $estoque, $valorcompra, $valorvenda, $dados_imagem);
 
-    $sql = "INSERT into prod values(null,'$nome','$tipo','$pesovolume','$codigo','$fornecedor','$estoque','$valorcompra','$valorvenda',$dados_imagem')";
-    if (mysqli_query($_con, $sql)) {
+    
+    /*if (mysqli_query($_con, $sql)) {
         echo "Novo registro inserido com sucesso!";
     } else {
           echo "Error: " . $sql . "<br>" . mysqli_error($_con);
-    }
+    }*/
 
     if ($stmt->execute()) {
         echo "Imagem inserida com sucesso no banco de dados.";
+        echo "if 2";
     } else {
         echo "Erro ao inserir a imagem no banco de dados: " . $stmt->error;
     }
