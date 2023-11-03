@@ -50,7 +50,7 @@ main {
 
 .topnav a {
     display: block;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 15px 15px;
     text-decoration: none;
     text-align: center;
