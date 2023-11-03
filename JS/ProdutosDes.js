@@ -73,13 +73,17 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
-var botao = document.getElementById(id="addcarrinho");
+/*var botao = document.getElementById(id="addcarrinho");
 
 // Encontre o "card" pai do botão
 var card = botao.parentNode;
 
 // Agora você pode trabalhar com o "card" como desejar
-console.log(card);
+console.log(card);*/
+
+var inputhidden = document.querySelector('#inputhidden');
+
+var arrayCarrinho = [];
 
 var botoes = document.querySelectorAll('#addcarrinho');
 
@@ -92,7 +96,11 @@ botoes.forEach(function(botao) {
         if (card) {
             // Agora você pode trabalhar com o "card" clicado, por exemplo, exibindo seu texto
             var cardTexto = card.querySelector('h2').textContent;
+            arrayCarrinho.unshift(cardTexto);
+            inputhidden.value = arrayCarrinho.join(', ');
             console.log('Clicou no botão do card:', cardTexto);
+            console.log(inputhidden.value);
         }
     });
 });
+
