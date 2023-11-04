@@ -71,6 +71,7 @@ a:hover {
 
 .nav-list{
     font-size: 15px;
+
 }
 
 .material-icons{
@@ -105,6 +106,7 @@ main {
 .mobile-menu {
     display: none;
     cursor: pointer;
+    display: block;
 }
 
 .mobile-menu div {
@@ -137,13 +139,7 @@ main {
 }
 
 
-ul li.nav-list:hover{
-    background-color: #d8e9db;
-}
 
-.mobile-menu {
-    display: block;
-}
 
 .nav-list.active {
     transform: translateX(0);
