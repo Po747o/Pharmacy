@@ -1,17 +1,12 @@
 <?php
 //$carrinhoArray = $_POST("arrayCarrinho[]");
-$carrinhoArray = array('Dipirona');
+$carrinhoArray = $_POST['arrayCarrinho'];
+$array = explode(", ", $carrinhoArray);
 $_con = mysqli_connect('127.0.0.1','root','','techpharma');
 if($_con===FALSE) {
-    //echo "Não foi possível conectar ao Servidor de banco de dados ";
+    echo '<script>alert("Não foi possível conectar ao Servidor de banco de dados");</script>';  
 } else {
-    //echo "Foi possível conectar ao Servidor de banco de dados ";
-    // Exemplo: SQL query
-    // $result = mysqli_query($_con, "use bd_escola;");
-    $sql = "Select * From prod where (nome_pro = '$carrinhoArray[0]')";
 
-    $result = mysqli_query($_con, $sql);
-    
     
     
 }
@@ -42,8 +37,7 @@ if($_con===FALSE) {
     <nav class="topnav">
         <div class="menu">
             <a href="home.html">HOME</a>
-            <a href="produtos.html">PRODUTOS</a>
-            <a href="ofertas.html">OFERTAS</a>
+            <a href="produto.php">PRODUTOS</a>
             <a href="servicosevacinas.html">SERVIÇOS E VACINAS</a>
             <a href="atendimento.html">ATENDIMENTO</a>
             <a href="quemsomos.html">QUEM SOMOS</a>
@@ -57,64 +51,83 @@ if($_con===FALSE) {
     addToCartButtons[i].addEventListener("click", addProductToCart) no JS do carrinho-->
 
     <main>
-        <div class="table-responsive">
 
-        <table class="table">
-            <thead class="thead-dark">
-              <tr>
-               <!-- <th scope="col" style="float: center;">ITEM</th>
-                <th scope="col">NOME</th>
-                <th scope="col">PREÇO</th>
-                <th scope="col">QUANTIDADE</th>
-                <th scope="col">REMOVER</th>
-              </tr>
-            </thead>
 
-            <tbody id="cart-items">
-            <?php
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo "<tr>";
-        echo $row;
-        //echo "<td>" . $row['nome_prod'] . "</td>";
-        echo "<td>" . $row['nome_pro'] . "</td>";
-        echo "<td>" . $row['valor_venda_pro'] . "</td>";
-        /*echo "<td>" . $row['idade'] . "</td>";
-        echo "<td>" . $row['idade'] . "</td>";*/
-        echo "<td>";
-        echo "<input type='number' value='1' min='0' class='form-control product-qtd-input'>";
-        echo "</td>";
-        echo "<td>";
-        echo "<button type='button' style='margin-top: 0px;' class='btn btnVermelho remove-product-button'><span class='material-icons'>delete</span></button>";
-        echo "</td>";
-        echo "</tr>";
+
+   
+<div class="table-responsive">
 
         
-       /* <tr>
-          <td><img src="imagens/card-dipirona.png" alt="img" draggable="false"></td>
-          <td>DIPIRONA</td>
-          <td>9,90</td>
-          <td>
-              <input type="number" value="1" min="0" class="form-control product-qtd-input">
-          </td>
-          <td>
-              <button type="button" style="margin-top: 0px;" class="btn btnVermelho remove-product-button"><span class="material-icons">delete</span></button>                        
-          </td>
-        </tr>*/
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">NOME</th>
+        <th scope="col">PREÇO</th>
+        <th scope="col">QUANTIDADE</th>
+        <th scope="col">REMOVER</th>
+      </tr>
+    </thead>
+    
+    <tbody id="cart-items">
+    <?php
+
+    $totalTempI = 0;
+    $totalTemp = [];
+    $j = 0;
+    for($i=0; $i < count($array); $i++){
+        $sql = "Select * From prod where (nome_pro = '$array[$i]')";
+
+        $result = mysqli_query($_con, $sql);
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<tr class='linha'>";
+            //echo "<td>" . $row['nome_prod'] . "</td>";
+            echo "<td>" . $row['nome_pro'] . "</td>";
+            echo "<td>" . $row['valor_venda_pro'] . "</td>";
+            echo "<td>";
+            echo "<input  type='number' value='1' min='1' class='form-control product-qtd-input totalInput'>";
+            echo "</td>";
+            echo "<td>";
+            echo "<button id='btnremover' type='button' style='margin-top: 0px;' class='btn btnVermelho remove-product-button'><span class='material-icons'>delete</span></button>";
+            echo "</td>";
+            echo "</tr>";
+            
+            $totalTemp[$j] = $row['valor_venda_pro'];
+            $j++;
+
     }
-    ?>
+   
+}
+
+$TotalTempI = $totalTemp[0] + $totalTemp[1] ;
+?>
 
 
-              <tfoot>
-                <tr>
-                  <td colspan="3" class="cart-total-container">
-                    <strong>TOTAL</strong>
-                    <span>R$0,00</span>
-                    <button type="button" class="btn btnVermelho">FINALIZAR COMPRA</button>
-                  </td>
-                </tr>
-              </tfoot>
-            </tbody>
-          </table>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="cart-total-container">
+          <form action="realizar_venda.php" method="post">
+            <strong>TOTAL</strong>
+            <span id='total'><?php echo 'R$' . $TotalTempI ?></span>
+            <button id='btnfinalizar' type="submit" class="btn btnVermelho">FINALIZAR COMPRA</button>
+            <input id="nome_pro" name="nome_pro" type="hidden">
+            <input id="quant_ven_pro" name="quant_ven_pro" type="hidden">
+            <input id="subtotal_ven_pro" name="subtotal_ven_pro" type="hidden">
+            <input id="data_ven" name="data_ven" type="hidden">
+            <input id="totalInput" name="totalInput" type="hidden">
+    </form>
+        </td>
+        </tr>
+      </tfoot>
+    </tbody>
+
+    
+    
+  </table>
+
+  
+
+
     </main> 
 
 
@@ -148,6 +161,7 @@ if($_con===FALSE) {
 
             </div>
     </footer>
+    <script src="../JS/carrinho.js"></script>
 </body>
 
 </html>

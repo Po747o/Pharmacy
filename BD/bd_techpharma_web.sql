@@ -98,19 +98,9 @@ INSERT INTO `login` (`id_log`, `usuario_log`, `senha_log`) VALUES
 
 --
 
-CREATE TABLE `produto` (
-  `id_pro` int PRIMARY KEY auto_increment NOT NULL,
-  `nome_pro` varchar(100) DEFAULT NULL,
-  `tipo_pro` varchar(100) DEFAULT NULL,
-  `peso_volume_pro` varchar(100) DEFAULT NULL,
-  `codigo_barra_pro` varchar(100) DEFAULT NULL,
-  `fornecedor_pro` varchar(300) DEFAULT NULL,
-  `estoque_pro` int(11) DEFAULT NULL,
-  `valor_compra_pro` double DEFAULT NULL,
-  `valor_venda_pro` double DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-CREATE TABLE `prod` (
+
+CREATE TABLE `produto` (
   `id_pro` int PRIMARY KEY auto_increment NOT NULL,
   `nome_pro` varchar(100) DEFAULT NULL,
   `tipo_pro` varchar(100) DEFAULT NULL,
@@ -125,7 +115,7 @@ CREATE TABLE `prod` (
 
 
 
-CREATE TABLE `servico` (
+CREATE TABLE servico (
   `id_ser` int PRIMARY KEY  auto_increment NOT NULL,
   `nome_ser` varchar(100) DEFAULT NULL,
   `fabricante` varchar(100) DEFAULT NULL,
@@ -137,6 +127,19 @@ CREATE TABLE `servico` (
   `quant_ser` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE venda (id_ven int PRIMARY KEY  auto_increment NOT NULL,
+valor_ven double DEFAULT NULL,
+data_ven date DEFAULT NULL)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+CREATE TABLE venda_produto (id_ven_pro int PRIMARY KEY auto_increment NOT NULL,
+subtotal_ven_pro double,
+quant_ven_pro int,
+id_pro_fk int,
+FOREIGN KEY (id_pro_fk) REFERENCES prod(id_pro),
+id_ven_fk int,
+FOREIGN KEY (id_ven_fk) REFERENCES venda(id_ven)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

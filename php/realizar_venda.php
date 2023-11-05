@@ -1,3 +1,68 @@
+
+<?php
+
+var_dump($_POST);
+
+$Nome = $_POST['nome_pro'];
+$Quant = $_POST['quant_ven_pro'];
+$Subtotal = $_POST['subtotal_ven_pro'];
+$Total = $_POST['totalInput'];
+$Data = $_POST['data_ven'];
+
+$NomeArray = explode(", ", $Nome);
+$QuantArray = explode(", ", $Quant);
+$SubtotalArray = explode(", ", $Subtotal);
+
+$linhas = count($NomeArray);
+$ID_pro = 0;
+$ID_ven = 0;
+
+
+$_con = mysqli_connect('127.0.0.1','root','','techpharma');
+if($_con===FALSE) {
+    echo '<script>alert("Não foi possível conectar ao Servidor de banco de dados");</script>';  
+} else {
+
+    $sql = "INSERT into venda values(null,'$Total','$Data')";
+if (mysqli_query($_con, $sql)) {
+
+    
+} else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($_con);
+}
+}
+
+$sql = "Select MAX(id_ven) from venda";
+$result=  (mysqli_query($_con, $sql));
+
+while ($row = $result->fetch_assoc()) {
+    $ID_ven = $row["MAX(id_ven)"];
+}
+
+    
+for($i =0; $i  < $linhas; $i++){
+    $sql = "Select id_pro from prod where (nome_pro = '$NomeArray[$i]')";
+    $resultado = (mysqli_query($_con, $sql));
+    while ($row = $resultado->fetch_assoc()) {
+        $ID_pro = $row["id_pro"];
+    }
+
+    $sql = "INSERT into venda_produto values(null,'$SubtotalArray[$i]','$QuantArray[$i]','$ID_pro','$ID_ven')";
+
+    if (mysqli_query($_con, $sql)) {
+        echo '<script>alert("Novo registro de venda_produto inserido com sucesso!");</script>';
+        
+    } else {
+          echo "Error: " . $sql . "<br>" . mysqli_error($_con);
+    }
+
+    echo '<script>alert("Compra bem sucedida! Agradecemos pela Preferência :)");</script>';
+    header('Refresh: 0; URL=../php/produto.php');
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,10 +70,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="\bootstrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\bootstrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="shortcut icon" href="imagens/logotechpharma.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="shortcut icon" href="../imagens/logotechpharma.png" type="image/x-icon">
     <script async scr="../js/carrinho.js"></script>
     <title>TechPharma - Carrinho de Compras</title>
 </head>
@@ -52,17 +117,7 @@
             </thead>
 
             <tbody id="cart-items">
-              <tr>
-                <td><img src="imagens/card-dipirona.png" alt="img" draggable="false"></td>
-                <td>DIPIRONA</td>
-                <td>9,90</td>
-                <td>
-                    <input type="number" value="1" min="0" class="form-control product-qtd-input">
-                </td>
-                <td>
-                    <button type="button" style="margin-top: 0px;" class="btn btnVermelho remove-product-button"><span class="material-icons">delete</span></button>                        
-                </td>
-              </tr>
+
               <tfoot>
                 <tr>
                   <td colspan="3" class="cart-total-container">
@@ -82,7 +137,7 @@
             <div class="colunaEsquerda">
 
                 <div class="iconphone">
-                    <img src="imagens/iconetelefone.png" alt="#">
+                    <img src="../imagens/iconetelefone.png" alt="#">
                 </div>
 
                 <div class="contato">
@@ -99,10 +154,10 @@
                 </div>
 
                 <div class="iconredes">
-                    <img src="imagens/iconefacebook.png" alt="#">
-                    <img src="imagens/iconeinstagram.png" alt="#">
-                    <img src="imagens/iconetwitter.png" alt="#">
-                    <img src="imagens/iconeyoutube.png" alt="#">
+                <img src="../imagens/iconefacebook.png" alt="#">
+                    <img src="../imagens/iconeinstagram.png" alt="#">
+                    <img src="../imagens/iconetwitter.png" alt="#">
+                    <img src="../imagens/iconeyoutube.png" alt="#">
                 </div>
 
             </div>

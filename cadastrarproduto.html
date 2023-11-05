@@ -22,8 +22,7 @@
     <nav class="topnav">
         <div class="menu">
           <a href="home.html">HOME</a>
-          <a href="produtos.html">PRODUTOS</a>
-          <a href="ofertas.html">OFERTAS</a>
+          <a href="produto.php">PRODUTOS</a>
           <a href="servicosevacinas.html">SERVIÇOS E VACINAS</a>
           <a href="atendimento.html">ATENDIMENTO</a>
           <a href="quemsomos.html">QUEM SOMOS</a>
@@ -32,7 +31,7 @@
 
     <main class="container mt-3 main">
 
-        <form action="php/produto.php" method="post">
+        <form action="php/cadastrarproduto.php" method="post" enctype="multipart/form-data">
             <div class="row g-3">
                 <div class="col">
                     <label for="nome" class="form-label labeltxt">NOME</label>
@@ -95,6 +94,14 @@
                         minlength="6" maxlength="100" required pattern="R$ [0-9]{0-300},[0-9]{1-2}">
                     <span class="mensagem-erro" data-erro></span>
                 </div>
+            </div>
+            <div class="row g-3">
+                <div class="col">
+                    <label for="imagem" class="form-label labeltxt">IMAGEM</label>
+                    <input type="file" aria-label="imagem" name="imagem" id="imagem">
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+
             </div>
 
             <div class="row g-3">
