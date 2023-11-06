@@ -36,11 +36,11 @@ if($_con===FALSE) {
     </header>
     <nav class="topnav">
         <div class="menu">
-            <a href="home.html">HOME</a>
+            <a href="../home.html">HOME</a>
             <a href="produto.php">PRODUTOS</a>
-            <a href="servicosevacinas.html">SERVIÇOS E VACINAS</a>
-            <a href="atendimento.html">ATENDIMENTO</a>
-            <a href="quemsomos.html">QUEM SOMOS</a>
+            <a href="../servicosevacinas.html">SERVIÇOS E VACINAS</a>
+            <a href="../atendimento.html">ATENDIMENTO</a>
+            <a href="../quemsomos.html">QUEM SOMOS</a>
         </div>
     </nav>
 

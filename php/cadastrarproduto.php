@@ -41,8 +41,8 @@ if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK) {
     }*/
 
     if ($stmt->execute()) {
-        echo "Imagem inserida com sucesso no banco de dados.";
-        echo "if 2";
+        echo '<script>alert("Novo registro inserido com sucesso!");</script>';
+        header('Refresh: 0; URL=../cadastrarproduto.html');
     } else {
         echo "Erro ao inserir a imagem no banco de dados: " . $stmt->error;
     }
