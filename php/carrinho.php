@@ -76,7 +76,7 @@ if($_con===FALSE) {
     $totalTemp = [];
     $j = 0;
     for($i=0; $i < count($array); $i++){
-        $sql = "Select * From prod where (nome_pro = '$array[$i]')";
+        $sql = "Select * From produto where (nome_pro = '$array[$i]')";
 
         $result = mysqli_query($_con, $sql);
         while ($row = mysqli_fetch_assoc($result)) {

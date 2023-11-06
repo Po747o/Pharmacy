@@ -8,13 +8,22 @@ $estoque = $_POST['estoque'];
 $valorcompra = $_POST['valorcompra'];
 $valorvenda = $_POST['valorvenda'];
 
+// Verifica se a string contém "R$"
+if (strpos($valorcompra, "R$") !== false) {
+    // Remove "R$" da string
+    $valorcompra = str_replace("R$", "", $valorcompra);
+}
 
+// Verifica se a string contém "R$"
+if (strpos($valorvenda, "R$") !== false) {
+    // Remove "R$" da string
+    $valorvenda = str_replace("R$", "", $valorvenda);
+}
 
 $_con = mysqli_connect('127.0.0.1','root','','techpharma');
 if($_con===FALSE) {
     echo "Não foi possível conectar ao Servidor de banco de dados ";
 } else {
-    echo "Foi possível conectar ao Servidor de banco de dados ";
     // Exemplo: SQL query
     // $result = mysqli_query($_con, "use bd_escola;");
     // Processar o upload da imagem

@@ -5,7 +5,7 @@ if($_con===FALSE) {
     echo '<script>alert("Não foi possível conectar ao Servidor de banco de dados");</script>';  
 } else {
 
-    $sql= "Select * from prod";
+    $sql= "Select * from produto";
     $result=mysqli_query($_con,$sql);
 
     

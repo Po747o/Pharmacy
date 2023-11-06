@@ -136,7 +136,7 @@ CREATE TABLE venda_produto (id_ven_pro int PRIMARY KEY auto_increment NOT NULL,
 subtotal_ven_pro double,
 quant_ven_pro int,
 id_pro_fk int,
-FOREIGN KEY (id_pro_fk) REFERENCES prod(id_pro),
+FOREIGN KEY (id_pro_fk) REFERENCES produto(id_pro),
 id_ven_fk int,
 FOREIGN KEY (id_ven_fk) REFERENCES venda(id_ven)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
