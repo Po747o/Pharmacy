@@ -56,15 +56,100 @@ if ($_con === FALSE) {
 
     <main>
 
-
         <div class="wrapper">
+
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div>
+                        <div class="img"><img src="../imagens/card-dipirona.png" alt="img" draggable="false"></div>
+                        <div class="desconto">-40%</div>
+                    </div>
+                    <h2>DIPIRONA</h2>
+                    <h2>MEDICAMENTOS </h2>
+                    <v1>R$16,50</v1>
+                    <v2>R$9,90</v2>
+
+                    <button id="addcarrinho" class="btn btnVermelho"><span
+                            class="material-symbols-outlined">add_shopping_cart</span></button>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="imagens/card-xarope.png" alt="img" draggable="false"></div>
+                    <h2>XAROPE</h2>
+                    <h2>MEDICAMENTOS</h2>
+                    <v2>R$7,99</v2>
+                    <button id="addcarrinho" class="btn btnVermelho"><span
+                            class="material-symbols-outlined">add_shopping_cart</span></button>
+                </li>
+
+
+                <li class="card">
+                    <div class="img"><img src="imagens/card-b12.png" alt="img" draggable="false"></div>
+                    <h2>VITAMINA B-12</h2>
+                    <h2>VITAMINAS</h2>
+                    <v2>R$5,99</v2>
+                    <button id="addcarrinho" class="btn btnVermelho"><span
+                            class="material-symbols-outlined">add_shopping_cart</span></button>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="imagens/card-fralda.png" alt="img" draggable="false"></div>
+                    <h2>FRALDA INFANTIL</h2>
+                    <h2>CUIDADOS INFANTIS</h2>
+                    <v1>R$54,99</v1>
+                    <v2>R$38,49</v2>
+                    <button id="addcarrinho" class="btn btnVermelho"><span
+                            class="material-symbols-outlined">add_shopping_cart</span></button>
+                </li>
+
+
+                <li class="card">
+                    <div class="img"><img src="imagens/card-rexona.png" alt="img" draggable="false"></div>
+                    <h2>DESODORANTE AEROSOL</h2>
+                    <h2>HIGIENE E CUIDADOS PESSOAIS</h2>
+                    <v2>R$5,99</v2>
+                    <button id="addcarrinho" class="btn btnVermelho"><span
+                            class="material-symbols-outlined">add_shopping_cart</span></button>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="imagens/card-talco_infantil.png" alt="img" draggable="false"></div>
+                    <h2>TALCO INFANTIL</h2>
+                    <h2>CUIDADOS INFANTIS</h2>
+                    <v2>R$5,99</v2>
+                    <button id="addcarrinho" class="btn btnVermelho"><span
+                            class="material-symbols-outlined">add_shopping_cart</span></button>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="imagens/card-repelente.png" alt="img" draggable="false"></div>
+                    <h2>REPELENTE</h2>
+                    <h2>HIGIENE E CUIDADOS PESSOAIS</h2>
+                    <v2>R$5,99</v2>
+                    <button id="addcarrinho" class="btn btnVermelho"><span
+                            class="material-symbols-outlined">add_shopping_cart</span></button>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="imagens/card-ibuprofeno.png" alt="img" draggable="false"></div>
+                    <h2>IBUPROFENO</h2>
+                    <h2>MEDICAMENTOS</h2>
+                    <v2>R$10,99</v2>
+                    <button id="addcarrinho" class="btn btnVermelho"><span
+                            class="material-symbols-outlined">add_shopping_cart</span></button>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+
+        <!--<div class="wrapper">
 
             <i id="left" class="fa-solid fa-angle-left"></i>
             <ul class="carousel">
 
 
             <?php
-            
+            /*
              while ($row = mysqli_fetch_assoc($result)) {
            
            
@@ -81,15 +166,15 @@ if ($_con === FALSE) {
               $imagem_base64 = base64_encode($row['imagem_pro']);
                  echo '<img src="data:image/jpeg;base64,' . $imagem_base64 . '"/><br>';
              */
-            }
+            // }
             ?>
-               <!-- <li class="card">
+                <li class="card">
                     <div class="img"><img src="imagens/card-xarope.png" alt="img" draggable="false"></div>
                     <h2>XAROPE</h2>
                     <h2>MEDICAMENTOS</h2>
                     <v2>R$7,99</v2>
                     <button id="addcarrinho" class="btn btnVermelho"><span class="material-symbols-outlined">add_shopping_cart</span></button>
-                </li> -->
+                </li>
 
             </ul>
             <i id="right" class="fa-solid fa-angle-right"></i>
