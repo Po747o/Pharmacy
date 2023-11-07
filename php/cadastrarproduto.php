@@ -36,7 +36,7 @@ if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK) {
     // Ler os dados binários da imagem
     $dados_imagem = file_get_contents($caminho_temporario);
 
-    //$sql = "INSERT into prod values(null,'$nome','$tipo','$pesovolume','$codigo','$fornecedor','$estoque','$valorcompra','$valorvenda','$dados_imagem')";
+    //$sql = "INSERT into produto values(null,'$nome','$tipo','$pesovolume','$codigo','$fornecedor','$estoque','$valorcompra','$valorvenda','$dados_imagem')";
     // Inserir a imagem na tabela
     $sql = "INSERT INTO produto (nome_pro, tipo_pro, peso_volume_pro, codigo_barra_pro, fornecedor_pro, estoque_pro, valor_compra_pro, valor_venda_pro, imagem_pro) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
     $stmt = $_con->prepare($sql);
