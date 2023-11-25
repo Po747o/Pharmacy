@@ -145,7 +145,8 @@ main {
     transform: translateX(0);
 }
 
-@keyframes navLinkFade {
+@keyframes navLinkFade{
+
     from {
         opacity: 0;
         transform: translateX(50px);
@@ -155,4 +156,6 @@ main {
         opacity: 1;
         transform: translateX(0);
     }
-}
+
+} 
+    
