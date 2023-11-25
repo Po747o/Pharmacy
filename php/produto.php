@@ -66,14 +66,13 @@ if ($_con === FALSE) {
             <?php
             
              while ($row = mysqli_fetch_assoc($result)) {
-           
-           
+
              echo '<li class="card">';
              $imagem_base64 = base64_encode($row['imagem_pro']);
              echo '<img class="img" src="data:image/jpeg;base64,'. $imagem_base64 .'" alt="img" draggable="false"/>';
              echo '<h2>'. $row["nome_pro"] .'</h2>';
              echo '<h2>'. $row["tipo_pro"] .'</h2>';
-             echo '<v2>'. $row["valor_venda_pro"] .'</v2>';
+             echo '<v2>R$'. $row["valor_venda_pro"] .'</v2>';
              echo '<button id="addcarrinho" class="btn btnVermelho"><span class="material-symbols-outlined">add_shopping_cart</span></button>';
              echo '</li>';
                
@@ -95,7 +94,7 @@ if ($_con === FALSE) {
             <i id="right" class="fa-solid fa-angle-right"></i>
         </div>     
 
-    </main>-->
+    </main>
         <footer class="footer">
             <div class="corpoFooter">
                 <div class="colunaEsquerda">

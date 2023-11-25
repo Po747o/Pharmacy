@@ -99,7 +99,26 @@ if($_con===FALSE) {
    
 }
 
-$TotalTempI = $totalTemp[0] + $totalTemp[1] ;
+if(count($totalTemp) >= 2){
+    $j = 0;
+    for($i=0; $i < count($array); $i++){
+        $sql = "Select * From produto where (nome_pro = '$array[$i]')";
+
+        $result = mysqli_query($_con, $sql);
+        while ($row = mysqli_fetch_assoc($result)) {
+            
+            
+            $TotalTempI =+ $totalTemp[$j];
+            $j++;
+        }
+
+    }
+}
+
+if(count($totalTemp) == 1){
+    $TotalTempI = $totalTemp[0];
+}
+
 ?>
 
 
