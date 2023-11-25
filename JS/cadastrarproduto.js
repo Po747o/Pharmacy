@@ -97,10 +97,13 @@ function validaCampo(campo) {
 
         case 'valorcompra':
             campo.value = campo.value.replace(/\D/g, ''); 
-            campo.value = "R$" + (parseInt(campo.value) / 100).toFixed(2);
+            campo.value = "R$ " + (parseInt(campo.value) / 100).toFixed(2);
             const valor = campo.value;
 
+            /*if (!valor.match(/^R\$[0-9]{1,6}(,[0-9]{1,2})?$/)) {
+                msnErro.textContent = "Digite o valor de compra no seguinte formato: R$ 0,00.";
 
+            }*/
         break
 
         case 'valorvenda':
