@@ -33,7 +33,7 @@ main {
 }
 
 .topnav {
-    overflow: hidden;
+    
     border-bottom: 5px solid rgb(128, 0, 0);
     margin: 0 auto;
     width: 100%;
