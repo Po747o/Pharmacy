@@ -33,7 +33,7 @@ main {
 }
 
 .topnav {
-    
+    overflow: hidden;
     border-bottom: 5px solid rgb(128, 0, 0);
     margin: 0 auto;
     width: 100%;
@@ -50,7 +50,7 @@ main {
 
 .topnav a {
     display: block;
-    color: rgb(0, 0, 0);
+    color: black;
     padding: 15px 15px;
     text-decoration: none;
     text-align: center;
@@ -148,10 +148,4 @@ main {
 .iconredes img{
     width: 50px;
     height: 50px;  
-}
-
-.containerCarrinho {
-    display: flex;
-    justify-content: right;
-    background-color: none;
 }
